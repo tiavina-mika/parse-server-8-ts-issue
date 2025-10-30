@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "verbatimModuleSyntax": false,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "strict": true, // Strict causes issues if importing "parse/node" in cloud code
+    "noUncheckedIndexedAccess": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "noEmit": true,
+    "lib": ["es2022"],
+    "typeRoots": [ "./src/types"],
+    "allowSyntheticDefaultImports": true  // Permet default imports synthétiques
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
