@@ -1,4 +1,5 @@
-Parse.Cloud.beforeSave('Article', async (request: any) => {
+
+Parse.Cloud.beforeSave('Article', async (request: Parse.Cloud.BeforeSaveRequest) => {
   const article = request.object;
   if (!article.get('title')) {
     throw new Error('Le champ "title" est requis pour Article.');
