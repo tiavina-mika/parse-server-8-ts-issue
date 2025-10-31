@@ -1,3 +1,4 @@
+import './functions';
 
 Parse.Cloud.beforeSave('Article', async (request: Parse.Cloud.BeforeSaveRequest) => {
   const article = request.object;
@@ -6,6 +7,6 @@ Parse.Cloud.beforeSave('Article', async (request: Parse.Cloud.BeforeSaveRequest)
   }
 });
 
-Parse.Cloud.define('hello', async (request: Parse.Cloud.FunctionRequest) => {
-  return 'Hello ' + request.params.name + '!';
-});
+// Parse.Cloud.define('hello', async (request: Parse.Cloud.FunctionRequest) => {
+//   return 'Hello ' + request.params.name + '!';
+// });
